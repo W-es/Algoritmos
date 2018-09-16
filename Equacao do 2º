@@ -1,0 +1,28 @@
+algoritmo "Equacao do 2º"
+// Função : Aluno
+// Autor : W-es
+// Data : 16/09/2018
+// Seção de Declarações 
+var
+delta,a,b,c,x1,x2:inteiro
+inicio
+// Seção de Comandos
+escreval("Digite o valor de a:")
+leia(a)
+escreval("Digite o valor de b:")
+leia(b)
+escreval("Digite o valor de c:")
+leia(c)
+delta<-(b*b)-4*a*c
+escreval("O resultado de delta é:",delta)
+    se delta>=0 entao
+       escreval("possui raizes reais.")
+    
+x1<-(-b+raizq(delta)) / (2*a) )
+x2<-(-b-raizq(delta)) / (2*a) )
+escreval("o valor de x1:",x1)
+escreval("o valor de x2:",x2)
+    senao
+       escreval("Delta negativo ou menor que zero nao possui raizes reais.")
+    fimse
+fimalgoritmo
