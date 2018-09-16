@@ -1,0 +1,27 @@
+algoritmo "Dois pontos quaisquer"
+// Função :Aluno
+// Autor :W-es
+// Data : 16/09/2018
+// Seção de Declarações 
+var
+x1,x2,y1,y2,p,q,D:real
+inicio
+// Seção de Comandos 
+escreva("o valor de x1:")
+leia(x1)
+escreva("o valor de x2: ")
+leia(x2)
+escreva("o valor de y1:")
+leia(y1)
+escreva("o valor de y2:")
+leia(y2)
+p<-x1,y1
+q<-x2,y2
+escreval("os valores de (p) é:",p)
+escreval("os valores de (q) é:",q)
+
+// preenchendo a formula
+
+D<- (raizq(x2-x1)*(x2-x1)+(y2-y1)*(y2-y1))
+escreval("A distancia entre eles é:",D)
+fimalgoritmo
