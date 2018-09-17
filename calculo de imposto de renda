@@ -1,0 +1,54 @@
+algoritmo "Calculos"
+// Função : Calcular imposto de renda
+// Autor : W-es
+// Data : 16/09/2018
+// Seção de Declarações 
+var
+IR,SM,RM,desconto:real
+cpf,dependentes:inteiro
+inicio
+// Seção de Comandos 
+   escreval("Calculo de imposto de renda.")
+   escreval("Olá, por favor Digite seu Cpf:")
+   leia(cpf)
+   escreval("Para podermos calcular Digite o valor do salario minimo atual:")
+   leia(SM)
+   escreval("Digite sua renda mensal do ultimo mes:")
+   leia(RM)
+   escreval("Quantos dependentes voce possui em casa:")
+   leia(dependentes)
+      se (RM<1908) entao
+      escreval("Voce esta isento de IR.")
+      fimse
+       se (RM>=1908) entao
+       desconto<-((RM/100)*5*dependentes)
+       IR<-(RM/100)*(7.5)-desconto)
+       escreval("Voce terá que declarar IR!")
+       escreval("O valor a contribuir ja com desconto é:",IR)
+       fimse
+
+        se (RM>=2862) entao
+        desconto<-((RM/100)*5*dependentes)
+        IR<-((RM/100)*(15)-desconto)
+        escreval("Voce terá que declarar IR!")
+        escreval("O valor a contribuir ja com desconto é:",IR)
+        fimse
+
+         se (RM>=4770) entao
+         desconto<-((RM/100)*5*dependentes)
+         IR<-((RM/100)*(22.5)-desconto)
+         escreval("Voce terá que declarar IR!")
+         escreval("O valor a contribuir ja com desconto é:",IR)
+         fimse
+
+          se (RM>=6678) entao
+          desconto<-((RM/100)*5*dependentes)
+          IR<-((RM/100)*(27.5)-desconto)
+          escreval("Voce terá que declarar IR!")
+          escreval("O valor a contribuir ja com desconto é:",IR)
+          fimse
+
+   escreval("Obrigado pela visita!")
+   escreval("Duvidas ligue 3000 4000.")
+
+fimalgoritmo
