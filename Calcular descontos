@@ -1,0 +1,52 @@
+algoritmo "Calcular o desconto"
+// Função :aluno
+// Autor : W-es
+// Data : 16/09/2018
+// Seção de Declarações 
+var
+valor:real
+fp:caracter
+desconto:real
+vf:real
+
+inicio
+// Seção de Comandos 
+   escreva("Digite o valor do produto:")
+   leia(valor)
+   escreval("As formas de pagamentos sao:")
+   escreval("1-A vista ou cheque voce tem 10% de desconto.")
+   escreval("2-1x no catao de credito voce ganha 5% de desconto.")
+   escreval("3-2x no cartao, o preço é normal.")
+   escreval("4-3x no cartao, juros de 10%.")
+   escreval("Qual é a opcao que voce deseja para pagar?")
+   leia(fp)
+
+   escolha fp
+       caso "1"
+            desconto<-((valor/100)*10)
+            vf<-(valor-desconto)
+            escreval("A vista ou cheque voce ganhou 10% de desconto.")
+            escreval("O valor final do produto é:",vf)
+
+       caso "2"
+            desconto<-((valor/100)*5)
+            vf<-valor-desconto
+            escreval("1x no catao de credito voce ganhou 5% de desconto.")
+            escreval("O valor final do produto é:",vf)
+
+       caso "3"
+            escreval("2x no cartao, O valor final é.",valor)
+       caso "4"
+            desconto<-((valor/100)*10)
+            vf<-valor+desconto
+            escreval("3x no cartao, acrescentar juros de 10%.")
+            escreval("O valor final é:",vf)
+       outrocaso
+            escreval("Não vendemos fiado")
+    fimescolha
+    
+escreval("Obrigado pela escolha!")
+escreval     ("volte sempre.")
+
+       
+fimalgoritmo
